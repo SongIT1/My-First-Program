@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewporyt" content="width=device-width,initial-scale=1.0">
+    <title>document</title>
+    <style>
+        table {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Day</th>
+                <th>Morning</th>
+                <!-- <th>Noon</th> -->
+                <th>Afternoon</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr></tr>
+        </tbody>
+    </table>
+
+    &nbsp;
+    <hr>&nbsp;<br>
+
+    <label for="day">Day </label><input type="list" list="day-of-week" name="day" id="day" placeholder="day"><br>
+    <label for="morning">Morning </label><input type="text" name="morning" id="morning" placeholder="Morning"><br>
+    <label for="afternoon">Afternoon </label><input type="text" name="afternoon" id="afternoon"
+        placeholder="Afternoon"><br>
+    <input type="button" id="addButton" value="add">
+
+    <datalist id="day-of-week">
+        <option value="Mon"></option>
+        <option value="Tue"></option>
+        <option value="Wed"></option>
+        <option value="Thu"></option>
+        <option value="Fri"></option>
+      </datalist>
+</body>
+
+<script>
+    function addClick(event) {
+        //ค้นหา ul ที่จะเพิ่มข้อมูลเข้าไป
+        let tbody = document.querySelector('tbody');
+
+        //ดึงข้อมูล input
+        let day = document.querySelector("#day");
+
+        // สร้าง item ใหม่ที่จะเพิ่ม
+        let morning = document.querySelector("#morning");
+        let afternoon = document.querySelector("#afternnon");
+
+        tbody.innerHTML += `<tr>
+            <th>${day.value}</th>
+            <td>${morning.value}</td>
+            <td>${afternoon.value}</td>
+            </tr>`;
+    }
+
+    let addButtom = document.querySelector("#addButtom");
+    addButtom.onclick=addClick;
+</script>
+
+</html>
