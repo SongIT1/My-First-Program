@@ -1,0 +1,120 @@
+table {
+    width: 100%;
+}
+
+table,
+th,
+td {
+    border: 1px black solid;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 5px 10px;
+}
+
+thead {
+    background-color: rgb(0, 139, 72);
+    color: white;
+}
+
+.subject {
+    text-align: center;
+}
+
+.lunch {
+    transform: rotate(-90deg);
+    text-align: center;
+}
+
+#subject-id {
+    background-color: aquamarine;
+}
+
+td:hover {
+    background-color: rgba(149, 16, 237, 0.396);
+}
+
+h1 {
+    font-size: 60px;
+    text-align: center;
+}
+
+td,
+th {
+    font-size: 16px;
+    line-height: 2;
+    letter-spacing: 2px;
+}
+
+.box {
+    background-color: blanchedalmond;
+    padding: 15px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+    height: 200px;
+    display: block;
+}
+.body {
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "sidebar content"
+        "sidebar content";
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 3fr 1fr;
+    height: calc(100vh - 20px);
+    overflow: auto;
+    gap: 5px;
+}
+.header {
+    grid-area: header;
+}
+.footer  {
+    grid-area: footer;
+
+}
+.side-menu {
+    grid-area: sidebar;
+    align-self: left;
+}
+.content {
+    grid-area: content;
+    text-align: center;
+}
+
+.header,
+.side-menu,
+.content,
+.footer {
+    border: 1px solid black;
+}
+body {
+    max-width: auto/*calc(100% - 70px)*/;
+    margin: auto;
+    background-color: rgba(5, 234, 255, 0.122);
+    padding: 0px 20px 20px 20px;
+    overflow: scroll;
+}
+.menu {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.menu a {
+    border: 1px solid black;
+    background-color: aquamarine;
+    text-align: center;
+    text-decoration: none;
+    padding: 15px;
+    color: black;
+}

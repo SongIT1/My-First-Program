@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block content %}
+{% for subject in subjectList %}
+    <div id="sb">
+        {{subject}}
+    </div>
+
+
+{% endfor %}
+<form action="{{ url_for('subject')}}" method="GET">
+    <input type="text" name="keyword">
+    <input type="submit" value="ค้นหา">
+</form>
+<form action="{{ url_for('create_subject')}}" method="POST">
+    <input type="text" name="subject_id">
+    <input type="text" name="subject_name">
+    <input type="submit" value="เพิ่ม">
+</form>
+{% endblock content %}

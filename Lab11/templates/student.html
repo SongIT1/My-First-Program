@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block content %}
+{% for student in studentList %}
+    <div id="Std">
+        {{student}}
+    </div>
+
+
+{% endfor %}
+<form action="{{ url_for('student')}}" method="GET">
+    <input type="text" name="keywords">
+    <input type="submit" value="ค้นหา">
+</form>
+
+<form action="{{ url_for('create_student')}}" method="POST">
+    <input type="text" name="student_id">
+    <input type="text" name="student_name">
+    <input type="submit" value="เพิ่ม">
+</form>
+{% endblock content %}

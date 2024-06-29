@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{{ title or "FastAPI Template"}}{% endblock title%}</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+
+<body>
+    <div class="body">
+        <div class="header">
+            <div class="box">
+                <img class="img-2" src="/static/img/me.jpg" height="200" width="200" alt="Nutthaphong Boonsong" />
+                <h1>Nutthaphong Boonsong</h1>
+            </div>
+        </div>
+        <div class="side-menu">
+            <div class="menu">
+                <a href="{{ url_for('profile')}}">Profile</a>
+                <a href="{{ url_for('table')}}">Table</a>
+                <a href="{{ url_for('subject')}}">subject</a>
+                <a href="{{ url_for('student')}}">student</a>
+                <!-- <a href="{{ url_for('index')}}">Profile</a> -->
+            </div>
+        </div>
+        <div class="content">
+            {% block content %}{% endblock content %}
+
+        </div>
+    </div>
+
+</body>
+
+</html>
