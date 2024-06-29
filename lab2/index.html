@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buurapa</title>
+    <title>Centered Profile</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #f6f6f6, hsl(217, 69%, 60%));
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .profile, .info, .schedule {
+            background: #fff;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 1000px;
+            width: 100%;
+        }
+        .profile img {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+        }
+        h1, h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        table {
+            border: 1;
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+        .title {
+            text-align: center;
+            color: #060b10;
+            margin-bottom: 20px;
+        }
+        .profile {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 class="title">Burapha University</h1>
+
+    <div class="container">
+        <div class="profile">
+            <img src="image/getstudentimage.jpg" alt="Profile Image">
+            <h2>Sarinthorn Phamorn</h2>
+            <p>Information Technology and Data Science.<br>
+            Burapha University</p>
+            <p>Student ID: 66310047<br>
+        </div>
+
+        <div class="info">
+            <h2>ตารางเรียน</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Day/Time</th>
+                        <th>8:00-9:00</th>
+                        <th>9:00-10:00</th>
+                        <th>10:00-11:00</th>
+                        <th>11:00-12:00</th>
+                        <th>12:00-13:00</th>
+                        <th>13:00-14:00</th>
+                        <th>14:00-15:00</th>
+                        <th>15:00-16:00</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>Mon</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td colspan="3">Appreciation of Arts for a Happy Life<br>L-204B</td>
+                    </tr>
+                    <tr>
+                        <th>Tue</th>
+                        <td></td>
+                        <td colspan="3">Information Technology Fundamentals<br>P-322</td>
+                    </tr>
+                    <tr>
+                        <th>Wed</th>
+                        <td colspan="1">Data Structures and Algorithms<br>P-406</td>
+                        <td colspan="1">Data Structures and Algorithms<br>P-311</td>
+                    </tr>
+                    <tr>
+                        <th>Tue</th>
+                        <td colspan="2">Database System<br>P-310</td>
+                    </tr>
+                    <tr>
+                        <th>Fri</th>
+                        <td></td>
+                        <td></td>
+                        <td colspan="1">Opportunities and Challenges for Future Careers<br>ARR</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="schedule">
+            <h2>Other Information</h2>
+            <p>มุ่งเน้นผลิตบัณฑิตให้มีความรู้ความเข้าใจด้านวิทยาการข้อมูล มีทักษะในการวิเคราะห์ข้อมูลอย่างเชี่ยวชาญ สามารถบูรณาการความรู้ทางด้านคณิตศาสตร์ สถิติ และเทคโนโลยีสารสนเทศในการเลือกใช้ข้อมูล จัดการกับข้อมูล วิเคราะห์ข้อมูลเพื่อตอบโจทย์ทางการตลาด และสังเคราะห์เป็นนวัตกรรมเชิงกลยุทธ์ให้กับภาคธุรกิจและภาคอุตสาหกรรมได้อย่างเหมาะสม  โดยคำนึงถึงจริยธรรมทางวิชาชีพ   อันนำไปสู่การพัฒนาองค์กรและประเทศชาติได้อย่างยั่งยืน</p>
+        </div>
+    </div>
+
+</body>
+</html>
